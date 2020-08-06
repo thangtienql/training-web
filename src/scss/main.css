@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  * .wrapper .header {
+    height: 98px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    display: grid;
+    grid-template-columns: 1fr 227px 1fr;
+    padding: 0 0 0 32px; }
+    * .wrapper .header .group_header_one {
+      display: flex;
+      align-items: center; }
+      * .wrapper .header .group_header_one .__call_us {
+        display: flex;
+        align-items: center;
+        margin-right: 32px; }
+        * .wrapper .header .group_header_one .__call_us img {
+          margin-right: 8px; }
+        * .wrapper .header .group_header_one .__call_us .__info_number {
+          font-family: 'DM Sans', sans-serif; }
+          * .wrapper .header .group_header_one .__call_us .__info_number .__text_call_us {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.125em;
+            text-transform: uppercase;
+            color: #7567F8; }
+          * .wrapper .header .group_header_one .__call_us .__info_number .__number_phone {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 26px;
+            color: #222222; }
+      * .wrapper .header .group_header_one .vertical-line {
+        border-left: 1px solid #EAEAEA;
+        height: 98px;
+        margin-right: 42px; }
+      * .wrapper .header .group_header_one .__are_you_a_member {
+        font-family: 'DM Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase; }
+        * .wrapper .header .group_header_one .__are_you_a_member span {
+          color: #555555; }
+        * .wrapper .header .group_header_one .__are_you_a_member a {
+          color: #7567F8;
+          text-decoration: none; }
+    * .wrapper .header .group_header_two {
+      display: flex; }
+      * .wrapper .header .group_header_two .__logo {
+        display: flex;
+        align-items: center;
+        font-family: 'DM Sans', sans-serif; }
+        * .wrapper .header .group_header_two .__logo a {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 47px;
+          color: #222222;
+          text-decoration: none; }
+        * .wrapper .header .group_header_two .__logo img {
+          width: 10px;
+          height: 10px;
+          margin-left: 4px;
+          margin-right: 16px; }
+        * .wrapper .header .group_header_two .__logo .__agency {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 114.2%;
+          letter-spacing: 0.315em;
+          text-transform: uppercase;
+          color: #999999; }
+    * .wrapper .header .group_header_three {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-family: 'DM Sans', sans-serif; }
+      * .wrapper .header .group_header_three ._search {
+        margin-right: 48px; }
+      * .wrapper .header .group_header_three ._change_language {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #999999; }
+      * .wrapper .header .group_header_three ._menu {
+        width: 106px;
+        height: 100%;
+        background: #7567F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 52px; }
+  * .wrapper .__modal_search {
+    max-width: 720px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    position: fixed;
+    left: calc(50% - 375px);
+    top: 0;
+    overflow: auto;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.9); }
+    * .wrapper .__modal_search .fa-times {
+      background: #7567F8;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 15px; }
+    * .wrapper .__modal_search ._search_input {
+      display: flex;
+      align-items: center; }
+      * .wrapper .__modal_search ._search_input .fa-search {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      * .wrapper .__modal_search ._search_input input {
+        width: 100%;
+        height: 48px;
+        border: none; }
+
+/*# sourceMappingURL=main.css.map */

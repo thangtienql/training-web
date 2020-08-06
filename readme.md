@@ -4,3 +4,6 @@
 
 ## 👉 `npm run dev`
 * live-server & compile SCSS
+
+## Link github
+* `https://github.com/thangtienql/training-web`

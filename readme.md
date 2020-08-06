@@ -6,4 +6,4 @@
 * live-server & compile SCSS
 
 ## Link github
-* `https://github.com/thangtienql/training-web`
+* `https://thangtienql.github.io/training-web/`

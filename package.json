@@ -1,0 +1,21 @@
+{
+  "name": "training-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "w:scss": "sass src/main.scss:dist/stylesheet.css --style compressed --watch",
+    "dev": "live-server & npm run w:scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huynhhuynh/training-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Huynhhuynh/training-web/issues"
+  },
+  "homepage": "https://github.com/Huynhhuynh/training-web#readme"
+}

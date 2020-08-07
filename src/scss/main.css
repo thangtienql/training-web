@@ -4,9 +4,12 @@
   padding: 0;
   box-sizing: border-box; }
   * .wrapper .header {
+    width: 100%;
     height: 98px;
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
+    position: fixed;
+    z-index: 99;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
     display: grid;
     grid-template-columns: 1fr 227px 1fr;
     padding: 0 0 0 32px; }
@@ -20,7 +23,7 @@
         * .wrapper .header .group_header_one .__call_us img {
           margin-right: 8px; }
         * .wrapper .header .group_header_one .__call_us .__info_number {
-          font-family: 'DM Sans', sans-serif; }
+          font-family: "DM Sans", sans-serif; }
           * .wrapper .header .group_header_one .__call_us .__info_number .__text_call_us {
             font-style: normal;
             font-weight: bold;
@@ -28,7 +31,7 @@
             line-height: 16px;
             letter-spacing: 0.125em;
             text-transform: uppercase;
-            color: #7567F8; }
+            color: #7567f8; }
           * .wrapper .header .group_header_one .__call_us .__info_number .__number_phone {
             font-style: normal;
             font-weight: bold;
@@ -36,11 +39,11 @@
             line-height: 26px;
             color: #222222; }
       * .wrapper .header .group_header_one .vertical-line {
-        border-left: 1px solid #EAEAEA;
+        border-left: 1px solid #eaeaea;
         height: 98px;
         margin-right: 42px; }
       * .wrapper .header .group_header_one .__are_you_a_member {
-        font-family: 'DM Sans', sans-serif;
+        font-family: "DM Sans", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 13px;
@@ -50,14 +53,14 @@
         * .wrapper .header .group_header_one .__are_you_a_member span {
           color: #555555; }
         * .wrapper .header .group_header_one .__are_you_a_member a {
-          color: #7567F8;
+          color: #7567f8;
           text-decoration: none; }
     * .wrapper .header .group_header_two {
       display: flex; }
       * .wrapper .header .group_header_two .__logo {
         display: flex;
         align-items: center;
-        font-family: 'DM Sans', sans-serif; }
+        font-family: "DM Sans", sans-serif; }
         * .wrapper .header .group_header_two .__logo a {
           font-style: normal;
           font-weight: bold;
@@ -81,7 +84,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      font-family: 'DM Sans', sans-serif; }
+      font-family: "DM Sans", sans-serif; }
       * .wrapper .header .group_header_three ._search {
         margin-right: 48px; }
       * .wrapper .header .group_header_three ._change_language {
@@ -94,11 +97,84 @@
       * .wrapper .header .group_header_three ._menu {
         width: 106px;
         height: 100%;
-        background: #7567F8;
+        background: #7567f8;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-left: 52px; }
+  * .wrapper .__ss_hero {
+    background-image: url(../../images/section-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    * .wrapper .__ss_hero .__wrap_hero {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      font-family: "DM Sans", sans-serif; }
+      * .wrapper .__ss_hero .__wrap_hero .__thumbnail_hero {
+        position: relative; }
+        * .wrapper .__ss_hero .__wrap_hero .__thumbnail_hero img {
+          width: 760px;
+          height: 760px;
+          object-fit: cover;
+          border-radius: 50%;
+          position: absolute; }
+      * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr {
+        margin-top: 253px;
+        width: 509px; }
+        * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr ._headding_hr {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 142.2%;
+          letter-spacing: 0.435em;
+          text-transform: uppercase;
+          color: #222222; }
+        * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr h2 {
+          font-size: 39px;
+          font-weight: bold; }
+          * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr h2 span {
+            color: #7567f8; }
+        * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr .__des_hr {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 29px;
+          color: #555555;
+          margin-top: 14px; }
+        * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr ._group_button {
+          margin-top: 36px; }
+          * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr ._group_button .btn-get-started {
+            padding: 23px 40px;
+            background: #7567f8;
+            font-family: "DM Sans", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: none;
+            margin-right: 32px; }
+          * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr ._group_button .btn-enquire {
+            font-family: "DM Sans", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.19em;
+            text-transform: uppercase;
+            color: #7567f8;
+            border: none;
+            background: transparent; }
+            * .wrapper .__ss_hero .__wrap_hero .__content_hero .__text_hr ._group_button .btn-enquire::after {
+              content: "\f0da";
+              font-family: FontAweSome;
+              margin-left: 5px; }
+      * .wrapper .__ss_hero .__wrap_hero .__content_hero .shape_10 {
+        position: absolute;
+        top: 0;
+        left: calc(75% - 234px); }
   * .wrapper .__modal_search {
     max-width: 720px;
     width: 100%;
@@ -112,7 +188,7 @@
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.9); }
     * .wrapper .__modal_search .fa-times {
-      background: #7567F8;
+      background: #7567f8;
       width: 40px;
       height: 40px;
       border-radius: 50%;

@@ -9,6 +9,7 @@ $(document).ready(function () {
     nav: true,
     margin: 30,
     dots: true,
+    lazyLoad:true,
     responsive: {
       1000: {
         items: 2,

@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./src/scss/main.css">
     <link rel="stylesheet" href="./src/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 </head>
 
 <body>
@@ -18,17 +19,18 @@
         <header class="header">
             <div class="group_header_one">
                 <div class="__call_us">
-                    <img src="./images/app 1.png" alt="app1">
-                    <div class="__info_number">
-                        <div class="__text_call_us">
-                            Call Us Now
+                    <a href="tel:888 99 0032">
+                        <img src="./images/app 1.png" alt="app1">
+                        <div class="__info_number">
+                            <div class="__text_call_us">
+                                Call Us Now
+                            </div>
+                            <div class="__number_phone">
+                                888 99 0032
+                            </div>
                         </div>
-                        <div class="__number_phone">
-                            888 99 0032
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="vertical-line"></div>
                 <div class="__are_you_a_member">
                     <span> Are you a member?</span><a href="#"> Register/</a><a href="#">log in</a>
                 </div>
@@ -51,11 +53,70 @@
                     <a>EU | </a>
                     <a>RU</a>
                 </div>
-                <div class="_menu">
+                <div id="showMenu" class="_menu">
                     <img src="./images/icon_menu.png" alt="">
                 </div>
             </div>
         </header>
+        <div id="modalMenu" class="__wrap_nav_menu">
+            <div id="navMenu" class="_nav_menu">
+                <div class="__top_menu">
+                    <div class="__wrap_top_menu">
+                        <div class="__logo">
+                            <a href="#">Spire</a>
+                            <img src="./images/ellipse1.png" alt="#">
+                            <div class="__agency">
+                                Agency<br>
+                                WP theme
+                            </div>
+                        </div>
+                        <div id="closeMenu" class="close_menu">
+                            <img src="./images/icon-close-menu.svg" alt="#">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="__content_top_menu">
+                        <h2 class="__title_menu">Branding Stratagies In <span>United State</span></h2>
+                        <p class="__des_menu">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="__main_menu">
+                    <ul class="__list_menu">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Productivity</a></li>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">iOS</a></li>
+                        <li><a href="#">Internet</a></li>
+                        <li><a href="#">Windows</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Creativity</a></li>
+                        <li><a href="#">Cryptocurrency</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Gadgets</a></li>
+                        <li><a href="#">Linux</a></li>
+                        <li><a href="#">Mac</a></li>
+                    </ul>
+                    <div class="__social_media">
+                        <a href="#" class="__facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="__google_plus">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="__linkedin">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="__twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="__ss_hero">
             <div class="__wrap_hero">
@@ -88,7 +149,7 @@
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <div class="_btn_scroll">
+                    <div id="scroll_next" class="_btn_scroll">
                         <img src="./images/mouse_1.png" alt="#">
                     </div>
 
@@ -177,7 +238,7 @@
                     <div class="__video_plan">
                         <img src="./images/video-plan.png" alt="#">
                         <div class="__button_play">
-                            <img src="./images/play-button.svg" alt="#">
+                            <img id="show_popup" src="./images/play-button.svg" alt="#">
                             <h2>Start Here: How Spire Creates Business Growth</h2>
                         </div>
                     </div>
@@ -189,21 +250,21 @@
         <section class="__ss_funfact">
             <div class="__item_funfact">
                 <div class="_percent">
-                    <span>64%</span>
+                    <span>64</span>
                 </div>
                 <h1 class="__title_funfact">Increased Conversion Rates</h1>
                 <p class="__des_funfact">with one conversion rate optimization strategy</p>
             </div>
             <div class="__item_funfact">
                 <div class="_percent">
-                    <span>106%</span>
+                    <span>106<a>%</a></span>
                 </div>
                 <h1 class="__title_funfact">Increased Traffic</h1>
                 <p class="__des_funfact">through a targeted social media campaign</p>
             </div>
             <div class="__item_funfact">
                 <div class="_percent">
-                    <span>241%</span>
+                    <span>241<a>%</a></span>
                 </div>
                 <h1 class="__title_funfact">Increased Revenue</h1>
                 <p class="__des_funfact">through combined SEO and viral marketing</p>
@@ -578,8 +639,8 @@
                         </div>
                     </div>
                     <div class="_group_btn_action">
-                        <input class="_btn_readmore" type="button" value="Read More" src="#">
-                        <input class="_btn_started" type="button" value="Get Started Now" src="#">
+                        <input class="_btn_readmore" type="button" value="Read More">
+                        <input class="_btn_started" type="button" value="Get Started Now">
                     </div>
 
                 </div>
@@ -667,25 +728,279 @@
                             </div>
                         </div>
                     </div>
+                    <div class="__items_new">
+                        <div class="_thumbnail_new">
+                            <img src="./images/new_2.png" alt="#">
+                        </div>
+                        <span class="__category_new">Marketing</span>
+                        <div class="__info_news">
+                            <div class="_date_new">August 13th, 2020</div>
+                            <h1 class="_title_new">How to Organize your Remote
+                                Team with Apps</h1>
+                            <div class="_author_new">
+                                <img src="./images/author.png" alt="#">
+                                <span>by Alex Dinamov</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="_btn_more_new" type="button" value="MOre Updates">
+            </div>
+        </section>
+
+        <section class="__ss_contact">
+            <div class="container">
+                <div class="_wrap_contact">
+                    <div class="_col_left">
+                        <p class="_the_most_amazing">The Most Amazing</p>
+                        <h1 class="_title_most_amazing">Digital Marketing
+                            That Drives Results</h1>
+                        <div class="_content_amazing">
+                            <p>Partner with leading marketing experts and advanced technology
+                                platforms to grow your business. Ut enim ad minima veniam, quis
+                                nostrum exercitationem.
+                            </p>
+                            <ul class="_list_quis">
+                                <li><a>Ullam corporis suscipit laboriosam, nisi ut aliquid.</a></li>
+                                <li><a>Excepteur sint occaecat cupid proident.</a></li>
+                                <li><a>Nemo enim ipsam voluptatem quia voluptas.</a></li>
+                            </ul>
+                        </div>
+                        <input class="_more_about" type="button" value="More About This">
+                    </div>
+                    <div class="_col_right">
+                        <h1 class="_title_form">Grow Your Brand</h1>
+                        <p class="_des_form">By Partnering With</p>
+                        <form class="_form_contact">
+                            <div class="_group_hor">
+                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Surname" required>
+                            </div>
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="number" placeholder="Phone Number" required>
+                            <textarea class="_tell_us" type="text" placeholder="Tell Us More...." required></textarea>
+                            <input type="submit" value="Get Your Free Proposal">
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-
-        <div class="__modal_search">
-            <i class="fa fa-times" aria-hidden="true"></i>
-            <div class="_search_input">
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <input type="text" placeholder="Search for...." required>
+        <footer class="footer">
+            <div class="__top_footer">
+                <div class="container">
+                    <div class="__logo">
+                        <a href="#">Spire</a>
+                        <img src="./images/ellipse1.png" alt="#">
+                        <div class="__agency">
+                            Agency<br>
+                            WP theme
+                        </div>
+                    </div>
+                    <div class="_des_footer">
+                        Partner with leading marketing experts and advanced technology
+                        platforms to grow your business.
+                    </div>
+                    <div class="_col_list">
+                        <div class="_col_one">
+                            <ul class="_list_col_one">
+                                <li><a href="#">Digital Marketing Services</a></li>
+                                <li><a href="#">SEO Services</a></li>
+                                <li><a href="#">PPC Services</a></li>
+                                <li><a href="#">Web Design Services</a></li>
+                                <li><a href="#">Social Media Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="_col_two">
+                            <ul class="_list_col_two">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">SEO Checker</a></li>
+                                <li><a href="#">Tools</a></li>
+                                <li><a href="#">Marketing Guides</a></li>
+                            </ul>
+                        </div>
+                        <div class="_col_three">
+                            <ul class="_list_col_three">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Job Post</a></li>
+                                <li><a href="#">Reviews</a></li>
+                            </ul>
+                        </div>
+                        <div class="_col_four">
+                            <h1 class="_title_join_newsletter">Join The <span>Newsletter</span></h1>
+                            <form class="_join_newsletter">
+                                <input type="email" placeholder="Email Address" required>
+                                <input type="submit" value="Subscribe Now">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="__bottom_footer">
+                <p>©2020 <span>Spire</span>. All Rights Reserved.</p>
+            </div>
+        </footer>
 
-    </div>
-    <script src="./dist/script.js"></script>
-    <script src="./src/js/jquery/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./src/js/main/main.js"></script>
+
+        <div class="__wrap_modal_search" id="modalSearch">
+            <div class="modal_search">
+                <i id="_close_search" class="fa fa-times" aria-hidden="true"></i>
+                <div class="_search_input">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="Search for...." required>
+                </div>
+                <div class="_result_search">
+                    <div class="_item_search">
+                        <div class="thumbnail_item_search">
+                            <img src="./images/item_search_1.jpg" alt="#">
+                        </div>
+                        <div class="_info_item_search">
+                            <div class="category_item_search">
+                                <span>Category</span>
+                            </div>
+                            <h4 class="_title_item_search">
+                                How You Can Give Your Website a Basic SEO Overhaul
+                            </h4>
+                            <div class="_date_time">
+                                <span class="_author">By <a>Andrej Kovacevic</a></span>
+                                <span class="_date">23rd July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_item_search">
+                        <div class="thumbnail_item_search">
+                            <img src="./images/item_search_2.jpg" alt="#">
+                        </div>
+                        <div class="_info_item_search">
+                            <div class="category_item_search">
+                                <span>Category</span>
+                            </div>
+                            <h4 class="_title_item_search">
+                                How You Can Give Your Website a Basic SEO Overhaul
+                            </h4>
+                            <div class="_date_time">
+                                <span class="_author">By <a>Andrej Kovacevic</a></span>
+                                <span class="_date">23rd July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_item_search">
+                        <div class="thumbnail_item_search">
+                            <img src="./images/item_search_3.jpg" alt="#">
+                        </div>
+                        <div class="_info_item_search">
+                            <div class="category_item_search">
+                                <span>Category</span>
+                            </div>
+                            <h4 class="_title_item_search">
+                                How You Can Give Your Website a Basic SEO Overhaul
+                            </h4>
+                            <div class="_date_time">
+                                <span class="_author">By <a>Andrej Kovacevic</a></span>
+                                <span class="_date">23rd July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_item_search">
+                        <div class="thumbnail_item_search">
+                            <img src="./images/item_search_4.jpg" alt="#">
+                        </div>
+                        <div class="_info_item_search">
+                            <div class="category_item_search">
+                                <span>Category</span>
+                            </div>
+                            <h4 class="_title_item_search">
+                                How You Can Give Your Website a Basic SEO Overhaul
+                            </h4>
+                            <div class="_date_time">
+                                <span class="_author">By <a>Andrej Kovacevic</a></span>
+                                <span class="_date">23rd July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_item_search">
+                        <div class="thumbnail_item_search">
+                            <img src="./images/item_search_5.jpg" alt="#">
+                        </div>
+                        <div class="_info_item_search">
+                            <div class="category_item_search">
+                                <span>Category</span>
+                            </div>
+                            <h4 class="_title_item_search">
+                                How You Can Give Your Website a Basic SEO Overhaul
+                            </h4>
+                            <div class="_date_time">
+                                <span class="_author">By <a>Andrej Kovacevic</a></span>
+                                <span class="_date">23rd July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_item_search">
+                        <div class="thumbnail_item_search">
+                            <img src="./images/item_search_1.jpg" alt="#">
+                        </div>
+                        <div class="_info_item_search">
+                            <div class="category_item_search">
+                                <span>Category</span>
+                            </div>
+                            <h4 class="_title_item_search">
+                                How You Can Give Your Website a Basic SEO Overhaul
+                            </h4>
+                            <div class="_date_time">
+                                <span class="_author">By <a>Andrej Kovacevic</a></span>
+                                <span class="_date">23rd July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_item_search">
+                        <div class="thumbnail_item_search">
+                            <img src="./images/item_search_2.jpg" alt="#">
+                        </div>
+                        <div class="_info_item_search">
+                            <div class="category_item_search">
+                                <span>Category</span>
+                            </div>
+                            <h4 class="_title_item_search">
+                                How You Can Give Your Website a Basic SEO Overhaul
+                            </h4>
+                            <div class="_date_time">
+                                <span class="_author">By <a>Andrej Kovacevic</a></span>
+                                <span class="_date">23rd July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_item_search">
+                        <div class="thumbnail_item_search">
+                            <img src="./images/item_search_3.jpg" alt="#">
+                        </div>
+                        <div class="_info_item_search">
+                            <div class="category_item_search">
+                                <span>Category</span>
+                            </div>
+                            <h4 class="_title_item_search">
+                                How You Can Give Your Website a Basic SEO Overhaul
+                            </h4>
+                            <div class="_date_time">
+                                <span class="_author">By <a>Andrej Kovacevic</a></span>
+                                <span class="_date">23rd July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_item_search">
+                    </div>
+                    <input class="_load_more" type="button" value="Load More Post">
+                </div>
+            </div>
+
+        </div>
+        <script src="./dist/script.js"></script>
+        <script src="./src/js/jquery/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        <script src="./src/js/main/main.js"></script>
 </body>
 
 </html>

@@ -1,22 +1,76 @@
-$container : 1170px;
-.container{
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
+$container: 1170px;
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
 }
-@keyframes scale{
-    0%{
-        opacity: 0;
-        transform: scale(0);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1.0);
-    }
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@keyframes toRight {
+  0% {
+    opacity: 0;
+    transform: translateX(341px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes toBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes white {
+  0% {
+    box-shadow: 0 0 0 0px rgb(247, 239, 239);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
 
-@import 'variables';
-@import 'style';
+@mixin style-li {
+  list-style-type: none;
+  transition: 0.4s;
+  &::before {
+    content: "\f105";
+    font-family: FontAwesome;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &:hover {
+    color: #7567f8;
+    a {
+      color: #7567f8;
+    }
+  }
+}
+@mixin style-li-a {
+  font-size: 16px;
+  line-height: 239.23%;
+  color: #222222;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+@import "variables";
+@import "style";
 
 @charset "UTF-8";

@@ -1,5 +1,16 @@
 $(document).ready(function () {
 
+  const typeList = {
+    hidden: 'hidden',
+    auto: 'auto',
+  };
+
+  function overflowSet(value) {
+    return {
+      overflow: type,
+    }
+  };
+
   // Modal Search
   $('#action-search').click(function () {
     $('.__wrap_modal_search').toggleClass('active');
@@ -8,10 +19,10 @@ $(document).ready(function () {
     });
   });
 
-  $('#_close_search').click(function(){
+  $('#_close_search').click(function () {
     $('.__wrap_modal_search').removeClass('active');
     $('body').css({
-      'overflow': 'auto',
+      'overflow': 'auto'
     });
   });
   //End Modal Search
@@ -35,7 +46,7 @@ $(document).ready(function () {
   $('#closeMenu').click(function () {
     $('.__wrap_nav_menu').removeClass('active');
     $('body').css({
-      'overflow': 'auto',
+      'overflow': 'auto'
     });
   });
 
@@ -44,18 +55,20 @@ $(document).ready(function () {
   let modalSearch = document.getElementById('modalSearch');
   window.onclick = function (event) {
     if (event.target == modal) {
-      $('.__wrap_nav_menu').removeClass('active');  
+      $('.__wrap_nav_menu').removeClass('active');
       $('body').css({
-        'overflow': 'auto',
+        'overflow': 'auto'
       });
-    }else if(event.target == modalSearch){
-      $('.__wrap_modal_search').removeClass('active');  
+    } else if (event.target == modalSearch) {
+      $('.__wrap_modal_search').removeClass('active');
+      // $('body').css(overflowSet(typeList.auto));
       $('body').css({
-        'overflow': 'auto',
+        'overflow': 'auto'
       });
     }
   }
-  
+
+
   // Number Counter
   $('._percent span').each(function () {
     $(this).prop('Counter', 0).animate({
@@ -87,7 +100,11 @@ $(document).ready(function () {
     dots: true,
     lazyLoad: true,
     responsive: {
-      1000: {
+      992: {
+        items: 2,
+      },
+      768: {
+        margin: 15,
         items: 2,
       },
     },
